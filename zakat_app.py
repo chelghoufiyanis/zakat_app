@@ -14,9 +14,9 @@ def obtenir_prix_or():
         reponse = requests.get(url, headers=headers)
         if reponse.status_code == 200:
             return reponse.json()['price'] / 31.1035
-        return 78.50
+        return 134.50
     except:
-        return 78.50
+        return 134.50
 
 # --- INTERFACE GRAPHIQUE ---
 st.title("🌙 Zakat Calculator")
@@ -90,4 +90,5 @@ with st.expander("🧮 Comment est-ce calculé ?"):
     
     *Si votre épargne dépasse ce montant, vous devez verser 2,5 %.*
     """)
+
 

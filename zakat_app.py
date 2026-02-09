@@ -34,7 +34,6 @@ st.divider()
 
 # Formulaire de saisie
 with st.container():
-    nom = st.text_input("Votre Nom / Prénom")
     epargne = st.number_input("Épargne totale (Banque + Espèces)", min_value=0.0, step=100.0)
     or_val = st.number_input("Valeur de l'or possédé (€)", min_value=0.0, step=100.0)
     dettes = st.number_input("Dettes à déduire", min_value=0.0, step=10.0)
@@ -90,5 +89,6 @@ with st.expander("🧮 Comment est-ce calculé ?"):
     
     *Si votre épargne dépasse ce montant, vous devez verser 2,5 %.*
     """)
+
 
 
